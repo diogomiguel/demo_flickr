@@ -20,4 +20,5 @@ Store selected images in localstorage and present them again as another Gallery.
 
 - Chrome (latest)
 - Firefox (v46)
+- IE9
 - Safari for Mac (latest)
