@@ -1,0 +1,8 @@
+{
+    "name": "Flickr API",
+    "version": "0.0.1",
+    "dependencies": {
+        "bootstrap-css-only": "latest",
+        "lodash": "latest"
+    }
+}

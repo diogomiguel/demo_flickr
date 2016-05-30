@@ -1,0 +1,115 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    margin-bottom: 15px;
+}
+
+.flickr-pic {
+    -webkit-animation: RevealImages 0.5s ease-out; /* Chr, Saf */
+    animation: RevealImages 0.5s ease-out;
+    cursor: pointer;
+    display: block;
+    transition: opacity 0.375s linear;
+    width: 100%;
+}
+
+.flickr-pic:hover {
+    opacity: .5;
+}
+
+.flickr-pic.selected {
+    border: 2px solid #ff0000;
+}
+
+/* Col Media queries
+-------------------------------------------------- */
+@media (max-width: 767px) {
+    .col:nth-child(2n+1) {
+        clear: left;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+    .col:nth-child(3n+1) {
+        clear: left;
+    }
+}
+@media (min-width: 992px) and (max-width: 1169px) {
+    .col:nth-child(4n+1) {
+        clear: left;
+    }
+}
+@media (min-width: 1170px) { 
+    .col:nth-child(6n+1) {
+        clear: left;
+    }
+}
+
+/* Animation
+-------------------------------------------------- */
+@-webkit-keyframes RevealImages {
+    0% {  
+        -webkit-transform: scale(0.1, 0.1);
+        -ms-transform: scale(0.1, 0.1);
+        transform: scale(0.1, 0.1);
+        opacity: 0.1;
+    } 
+    85% {
+        opacity: 1;
+    }
+    100% { 
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }  
+}
+@keyframes RevealImages {
+    0% {  
+        -webkit-transform: scale(0.1, 0.1);
+        -ms-transform: scale(0.1, 0.1);
+        transform: scale(0.1, 0.1);
+        opacity: 0.1;
+    } 
+    85% {
+        opacity: 1;
+    }
+    100% { 
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 1;
+    }  
+}
