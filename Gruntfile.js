@@ -93,6 +93,19 @@ module.exports = function(grunt) {
                 flatten: true,
                 src: '<%= dirs.src %>/css/*.css',
                 dest: '<%= dirs.dist %>/css'
+            },
+            // Vendors who need to be called within the index. TODO: Improve
+            vendor_bootstrap: {
+                expand: true,
+                flatten: true,
+                src: '<%= dirs.vendor %>/bower_components/bootstrap-css-only/*',
+                dest: '<%= dirs.dist %>/vendor/bootstrap-css-only/'
+            },
+            vendor_html5shiv: {
+                expand: true,
+                flatten: true,
+                src: '<%= dirs.vendor %>/html5shiv/*',
+                dest: '<%= dirs.dist %>/vendor/html5shiv/'
             }
         },
 
